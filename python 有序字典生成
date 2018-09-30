@@ -1,0 +1,20 @@
+# -*- coding:utf-8 -*-
+"""
+  python有序字典
+  需导入模块collections
+"""
+import collections
+# 通过OrderedDict类创建的字典是有序的
+dic = collections.OrderedDict()
+dic['k1'] = 'v1'
+dic['k2'] = 'v2'
+dic['k3'] = 'v3'
+print dic
+ 
+"""
+    类似通过列表的方式来实现字典有序
+    创建列表,添加列表元素k1时,再将k1作为字典的键，
+    因为列表是序的，所以遍历列表就可有序的遍历出字典所有的key
+"""
+dic = {'K1': 'V1', 'K2': 'V2', 'K3': 'V3'}
+li = ['k1', 'k2', 'k3']
